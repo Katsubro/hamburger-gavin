@@ -52,28 +52,6 @@ h1 {
   transform: scale(1.1);
 }
 
-/* Ingredients Section Styles */
-.ingredients-container {
-  margin-top: 40px;
-  display: none; /* Hidden by default */
-  text-align: left;
-}
-
-.ingredients-container.show {
-  display: block; /* Show when toggled */
-}
-
-.ingredient {
-  margin: 20px 0;
-}
-
-.ingredient img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
 /* Animation for the text */
 @keyframes fadeIn {
   0% {
