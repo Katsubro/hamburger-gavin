@@ -7,6 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 .container {
@@ -49,6 +50,28 @@ h1 {
 .btn:hover {
   background-color: #e66921;
   transform: scale(1.1);
+}
+
+/* Ingredients Section Styles */
+.ingredients-container {
+  margin-top: 40px;
+  display: none; /* Hidden by default */
+  text-align: left;
+}
+
+.ingredients-container.show {
+  display: block; /* Show when toggled */
+}
+
+.ingredient {
+  margin: 20px 0;
+}
+
+.ingredient img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Animation for the text */
