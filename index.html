@@ -16,6 +16,56 @@
       <button class="btn" id="learnMoreBtn">Learn More</button>
       <button class="btn" id="orderNowBtn">Order Now</button>
     </div>
+    
+    <!-- Ingredients Section (Hidden by default) -->
+    <div id="ingredients" class="ingredients-container">
+      <h2>Ingredients</h2>
+      <div class="ingredient">
+        <h3>Buns</h3>
+        <img src="https://images.unsplash.com/photo-1561948950-8362f875ea28" alt="Hamburger Bun" />
+      </div>
+      <div class="ingredient">
+        <h3>Meat</h3>
+        <img src="https://images.unsplash.com/photo-1599235889261-1b44a40ffad5" alt="Hamburger Meat" />
+      </div>
+      <div class="ingredient">
+        <h3>Lettuce</h3>
+        <img src="https://images.unsplash.com/photo-1572326744-f0c081fa2b28" alt="Lettuce" />
+      </div>
+      <div class="ingredient">
+        <h3>Cheese</h3>
+        <img src="https://images.unsplash.com/photo-1567890852-bc58167004de" alt="Cheese" />
+      </div>
+      <div class="ingredient">
+        <h3>Tomato</h3>
+        <img src="https://images.unsplash.com/photo-1580928231256-e77900d33893" alt="Tomato" />
+      </div>
+      <div class="ingredient">
+        <h3>Onions</h3>
+        <img src="https://images.unsplash.com/photo-1589253222662-17be105fe199" alt="Onions" />
+      </div>
+      <div class="ingredient">
+        <h3>Sauces</h3>
+        <img src="https://images.unsplash.com/photo-1565683965-4a07357200d3" alt="Sauces" />
+      </div>
+    </div>
   </div>
+
+  <script>
+    // JavaScript to toggle visibility of ingredients
+    const learnMoreBtn = document.getElementById("learnMoreBtn");
+    const ingredientsSection = document.getElementById("ingredients");
+
+    learnMoreBtn.addEventListener("click", () => {
+      // Toggle the visibility of the ingredients section
+      ingredientsSection.classList.toggle("show");
+      // Change button text when clicked
+      if (ingredientsSection.classList.contains("show")) {
+        learnMoreBtn.textContent = "Hide Ingredients";
+      } else {
+        learnMoreBtn.textContent = "Learn More";
+      }
+    });
+  </script>
 </body>
 </html>
