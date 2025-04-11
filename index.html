@@ -17,6 +17,35 @@
       <!-- "Order Now" Button linking to the given URL -->
       <a href="https://eaglercraft.com/mc/1.8.8/" target="_blank" class="btn" id="orderNowBtn">Order Now</a>
     </div>
+
+    <!-- Dropdown Menu (Hidden by default) -->
+    <div id="burgerMenu" class="dropdown-container">
+      <ul>
+        <li>McDonald's Minecraft Meal</li>
+        <li>Trevor Burger</li>
+        <li>Gavin Burger</li>
+        <li>Jace Burger</li>
+        <li>Sean Burger</li>
+        <li>Dante Burger</li>
+      </ul>
+    </div>
   </div>
+
+  <script>
+    // JavaScript to toggle the visibility of the dropdown menu
+    const learnMoreBtn = document.getElementById("learnMoreBtn");
+    const burgerMenu = document.getElementById("burgerMenu");
+
+    learnMoreBtn.addEventListener("click", () => {
+      // Toggle the visibility of the burger menu
+      burgerMenu.classList.toggle("show");
+      // Change button text when clicked
+      if (burgerMenu.classList.contains("show")) {
+        learnMoreBtn.textContent = "Hide Menu";
+      } else {
+        learnMoreBtn.textContent = "Learn More";
+      }
+    });
+  </script>
 </body>
 </html>
