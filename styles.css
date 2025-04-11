@@ -52,6 +52,37 @@ h1 {
   transform: scale(1.1);
 }
 
+/* Dropdown Menu Styles */
+.dropdown-container {
+  display: none; /* Hidden by default */
+  margin-top: 20px;
+  text-align: left;
+  background-color: #fffbf1;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-container.show {
+  display: block; /* Show when toggled */
+}
+
+.dropdown-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-container ul li {
+  padding: 8px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-container ul li:hover {
+  background-color: #f4a261;
+  color: white;
+}
+
 /* Animation for the text */
 @keyframes fadeIn {
   0% {
