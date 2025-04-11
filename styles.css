@@ -28,6 +28,29 @@ h1 {
   transform: translateY(-100px);
 }
 
+/* Buttons Container */
+.buttons {
+  margin-top: 30px;
+}
+
+/* Button Styles */
+.btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #ff7a29;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #e66921;
+  transform: scale(1.1);
+}
+
 /* Animation for the text */
 @keyframes fadeIn {
   0% {
